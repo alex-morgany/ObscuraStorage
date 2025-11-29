@@ -1,0 +1,149 @@
+.panel {
+  background: rgba(15, 23, 42, 0.85);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  border: 1px solid rgba(148, 163, 184, 0.15);
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.55);
+  color: #f8fafc;
+}
+
+.panel + .panel {
+  margin-top: 2rem;
+}
+
+.panel-header {
+  margin-bottom: 1.5rem;
+}
+
+.panel-title {
+  margin: 0;
+  font-size: 1.75rem;
+}
+
+.panel-subtitle {
+  margin: 0.5rem 0 0;
+  color: rgba(248, 250, 252, 0.75);
+}
+
+.panel-warning {
+  margin-top: 0.5rem;
+  color: #fbbf24;
+  font-size: 0.95rem;
+}
+
+.input-group {
+  margin-bottom: 1.25rem;
+}
+
+.input-label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.file-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  background: rgba(15, 23, 42, 0.6);
+  color: #f8fafc;
+}
+
+.file-meta,
+.input-help {
+  margin-top: 0.5rem;
+  color: rgba(248, 250, 252, 0.65);
+}
+
+.preview-box {
+  margin-bottom: 1.5rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  background: rgba(15, 23, 42, 0.8);
+}
+
+.preview-box img {
+  width: 100%;
+  display: block;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+.action-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+@media (min-width: 640px) {
+  .action-row {
+    flex-direction: row;
+  }
+}
+
+.action-button {
+  flex: 1;
+  border-radius: 999px;
+  padding: 0.85rem 1.25rem;
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  background: rgba(15, 23, 42, 0.5);
+  color: #f8fafc;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.action-button.primary {
+  background: linear-gradient(120deg, #6366f1, #ec4899);
+  border-color: transparent;
+}
+
+.action-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.status-message {
+  margin-top: 1rem;
+  color: #c4b5fd;
+}
+
+.summary-grid {
+  margin-top: 1.5rem;
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .summary-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.summary-label {
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  color: rgba(248, 250, 252, 0.55);
+  margin-bottom: 0.35rem;
+}
+
+.summary-value {
+  margin: 0;
+  font-family: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New',
+    monospace;
+  word-break: break-all;
+}
+
+.summary-value.secret {
+  font-size: 1.3rem;
+  letter-spacing: 0.15em;
+  color: #a5f3fc;
+}
+
+.summary-value.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

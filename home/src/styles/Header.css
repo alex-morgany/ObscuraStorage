@@ -1,0 +1,41 @@
+.header {
+  padding: 2.5rem 1.25rem 1.5rem;
+  color: #f8fafc;
+}
+
+.header-inner {
+  max-width: 72rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .header-inner {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+
+.header-eyebrow {
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+  color: rgba(248, 250, 252, 0.7);
+}
+
+.header-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  margin: 0;
+}
+
+.header-description {
+  margin-top: 0.75rem;
+  font-size: 1rem;
+  color: rgba(248, 250, 252, 0.8);
+  max-width: 36rem;
+}

@@ -1,0 +1,57 @@
+.storage-app {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 0 1.25rem 3rem;
+}
+
+.storage-main {
+  margin-top: 1.5rem;
+}
+
+.tab-wrapper {
+  background: rgba(15, 23, 42, 0.85);
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  border: 1px solid rgba(148, 163, 184, 0.15);
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.45);
+}
+
+.tab-nav {
+  display: inline-flex;
+  background: rgba(15, 23, 42, 0.45);
+  border-radius: 999px;
+  padding: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.tab-button {
+  border: none;
+  background: transparent;
+  color: rgba(248, 250, 252, 0.7);
+  font-weight: 600;
+  padding: 0.65rem 1.5rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tab-button.tab-active {
+  background: linear-gradient(120deg, #818cf8, #a855f7);
+  color: #0f172a;
+  box-shadow: 0 12px 24px rgba(129, 140, 248, 0.35);
+}
+
+.tab-button:not(.tab-active):hover {
+  color: #f8fafc;
+}
+
+.zama-hint,
+.zama-error {
+  margin: 0;
+  font-size: 0.95rem;
+  color: rgba(248, 250, 252, 0.75);
+}
+
+.zama-error {
+  color: #fca5a5;
+}

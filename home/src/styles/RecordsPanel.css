@@ -1,0 +1,96 @@
+.records-grid {
+  display: grid;
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
+
+.record-card {
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 1.25rem;
+  padding: 1.25rem;
+  background: rgba(15, 23, 42, 0.75);
+}
+
+.record-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+}
+
+.record-title {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.record-meta {
+  margin: 0.35rem 0 0;
+  font-size: 0.9rem;
+  color: rgba(248, 250, 252, 0.65);
+}
+
+.record-decrypt {
+  border-radius: 999px;
+  border: none;
+  padding: 0.6rem 1.25rem;
+  background: linear-gradient(120deg, #ec4899, #f97316);
+  color: #0f172a;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.record-decrypt:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.record-row {
+  margin-top: 1rem;
+}
+
+.record-label {
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  color: rgba(248, 250, 252, 0.5);
+  margin: 0 0 0.25rem;
+}
+
+.record-value {
+  margin: 0;
+  font-family: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New',
+    monospace;
+  word-break: break-all;
+  color: rgba(248, 250, 252, 0.9);
+}
+
+.record-hint {
+  margin-top: 1rem;
+  color: rgba(248, 250, 252, 0.65);
+  font-size: 0.9rem;
+}
+
+.records-hint {
+  margin: 0.75rem 0;
+  color: rgba(248, 250, 252, 0.7);
+}
+
+.records-error {
+  margin: 0.25rem 0 0.75rem;
+  color: #fca5a5;
+}
+
+.decrypted-box {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 1px dashed rgba(129, 140, 248, 0.6);
+  background: rgba(79, 70, 229, 0.1);
+}
+
+.record-secret {
+  font-size: 1.15rem;
+  letter-spacing: 0.12em;
+  color: #a5f3fc;
+  margin: 0 0 0.75rem;
+}
