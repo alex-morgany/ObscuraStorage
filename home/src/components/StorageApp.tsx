@@ -3,7 +3,7 @@ import { Header } from './Header';
 import { UploadPanel } from './UploadPanel';
 import { RecordsPanel } from './RecordsPanel';
 import { useZamaInstance } from '../hooks/useZamaInstance';
-import type { ZamaHookState } from '../types/storage';
+import type { ZamaHookState } from '../type/storage';
 import '../styles/StorageApp.css';
 
 export function StorageApp() {

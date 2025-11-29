@@ -3,7 +3,7 @@ import { useAccount, useReadContract } from 'wagmi';
 import { useEthersSigner } from '../hooks/useEthersSigner';
 import { CONTRACT_ABI, CONTRACT_ADDRESS, CONTRACT_DEPLOYED } from '../config/contracts';
 import { decryptHashWithKey } from '../lib/encryption';
-import type { DecryptedRecord, StoredFileRecord, ZamaHookState } from '../types/storage';
+import type { DecryptedRecord, StoredFileRecord, ZamaHookState } from '../type/storage';
 import '../styles/RecordsPanel.css';
 
 type RecordsPanelProps = {

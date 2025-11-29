@@ -5,7 +5,7 @@ import { useEthersSigner } from '../hooks/useEthersSigner';
 import { CONTRACT_ADDRESS, CONTRACT_ABI, CONTRACT_DEPLOYED } from '../config/contracts';
 import { mockIpfsUpload, humanReadableSize } from '../lib/ipfs';
 import { decryptHashWithKey, encryptHashWithKey, generateSecretKey } from '../lib/encryption';
-import type { ZamaHookState } from '../types/storage';
+import type { ZamaHookState } from '../type/storage';
 import '../styles/UploadPanel.css';
 
 type UploadPanelProps = {
